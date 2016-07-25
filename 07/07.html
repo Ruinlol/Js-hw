@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+label, input, button, select, p {
+	font-size: 2em;
+}
+</style>
+</head>
+<body>
+	<script>
+		function convertion() {
+			var value = document.querySelector("input").value;
+			var firstCell = document.querySelector(".first").value;
+			var secondCell = document.querySelector(".second").value;
+
+			if (firstCell == "kg" && secondCell == "kg") {
+				document.querySelector("p").innerHTML = value;
+			}
+
+			if (firstCell == "lb" && secondCell == "lb") {
+				document.querySelector("p").innerHTML = value;
+			}
+
+			if (firstCell == "kg" && secondCell == "lb") {
+				document.querySelector("p").innerHTML = value * 2.20462262;
+			}
+			if (firstCell == "lb" && secondCell == "kg") {
+				document.querySelector("p").innerHTML = value / 2.20462262;
+			}
+
+		}
+	</script>
+	<form action="">
+		<label for="">Convert:</label> <input type="text" /> 
+		<select class="first">
+			<option value="kg">kg</option>
+			<option value="lb">lb</option>
+		</select> 
+		<select class="second">
+			<option value="lb">lb</option>
+			<option value="kg">kg</option>
+		</select>
+		<button type="button" onclick="return convertion()">Calculate</button>
+		<p></p>
+	</form>
+</body>
+</html>

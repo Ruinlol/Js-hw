@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+img {
+	width: 300px;
+	height: 300px;
+}
+</style>
+</head>
+<body>
+<img src="img/cat.jpg" alt="" onmouseover="zoomImg(this)" onmouseout="unzoomImg(this)"/>
+<img src="img/cat1.jpg" alt="" onmouseover="zoomImg(this)" onmouseout="unzoomImg(this)"/>
+<img src="img/cat2.jpg" alt="" onmouseover="zoomImg(this)" onmouseout="unzoomImg(this)"/>
+<img src="img/cat3.jpg" alt="" onmouseover="zoomImg(this)" onmouseout="unzoomImg(this)"/>
+</body>
+<script>
+function zoomImg(Img){
+	Img.style.height = "600px";
+	Img.style.width = "600px";
+}
+function unzoomImg(Img){
+	Img.style.height = "300px";
+	Img.style.width = "300px";
+}
+
+
+</script>
+
+</html>

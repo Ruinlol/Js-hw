@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function randomImg(){
+	var imgs = [ 'img/cat.jpg', 'img/cat1.jpg', 'img/cat2.jpg', 'img/cat3.jpg' ];
+	var picId = Math.floor(Math.random()*imgs.length);
+	document.querySelector('#pictureOne').src =imgs[picId];
+}
+</script>
+</head>
+<body onload="randomImg()">
+<img src="" alt="" id="pictureOne" />
+
+</body>
+</html>

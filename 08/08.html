@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function createRoll() {
+	var roll = document.createElement('tr');
+	var content = document.createElement('td');
+	content.innerHTML = 'Here\' another roll for ya!';
+	roll.appendChild(content);
+	document.querySelector(".table").appendChild(roll);
+	
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+<table border="1" class="table" >
+<tr>
+<th>Test Table</th>
+
+</tr>
+<tr><td>Here's a roll for ya!</td></tr>
+
+</table>
+<button onclick="return createRoll()">Add roll</button>
+</body>
+</html>

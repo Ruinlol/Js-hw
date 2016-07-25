@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+label, button, input {
+	display: block;
+	margin-top: 1em;
+	font-size: 2em;
+}
+</style>
+</head>
+<body>
+	<form >
+
+		<label >Radius:</label> <input type="text" id="radius" /> 
+		<label >Volume:</label> <input type="text" id="output"/>
+
+		<button type="button" onclick="return volumeCircle() ">Calculate</button>
+
+	</form>
+</body>
+<script>
+		function volumeCircle(){
+			  var r = document.querySelector('#radius').value;
+			  var volume = 4*(Math.PI * Math.pow(r,3))/3;
+			  document.querySelector('#output').value = volume;
+		}
+</script>
+</html>
+

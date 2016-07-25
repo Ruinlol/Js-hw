@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css" />
+
+</head> 
+<body>
+	<form action=""  >
+		<div id="divName">
+			<label for="" >Name:</label> 
+			<input type="text"  class="input" id="name" placeholder= "Enter your name and surname" required/>
+			
+		</div>
+		<div id="divDate">
+			<label for="">Date of Birth:</label>
+			<input type="text" placeholder="dd/mm/yyyy" required id="date" class="input"/>
+		</div>
+		<div id="countryDiv">
+			<label for="">Coutnry:</label>
+			<select name="" id="country" onchange="otherOption()">
+				<option value="" selected disabled="disabled">Pick a country</option>
+				<option value="Bulgaria">Bulgaria</option>
+				<option value="England">England</option>
+				<option value="Sweeden">Sweeden</option>
+				<option value="Germany">Germany</option>
+				<option value="France">France</option>
+				<option value="Spain">Spain</option>
+				<option value="other">Other</option>
+			</select>
+			
+		</div>
+		<div>
+			<label for="">Adress:</label>
+			<input type="text" required/>
+			
+		</div>
+
+		<div id="divPhone">
+			<label for="">Phone:</label>
+			 <input type="text" class="input" placeholder= "+3598"  required id="phone" />
+			
+		</div>
+		<div id="divEmail">
+			<label for="">Email:</label> 
+			<input type="text" class="input"  id="email" placeholder= "example@email.com" required  />
+			
+		</div>
+		<p class="validWar">All fields are required</p>
+		<div>
+			<label for=""></label>
+			<button type="button" onclick="validate()" >Submit</button>
+		</div>
+	</form>
+	<script src="validation.js"	></script>
+</body>
+</html>

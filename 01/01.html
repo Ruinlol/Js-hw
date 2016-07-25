@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	var arr1 = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3];
+	arr1.sort();
+	var maxC = 0;
+	var counter = 1;
+	var number;
+	var maxN;
+	for (var i = 1; i < arr1.length ; i++) {
+	
+		if (arr1[i] == arr1[i - 1]) {
+			counter ++;
+			number = arr1[i];
+		
+		
+		} else {			
+			 counter = 1;
+		}
+		if(maxC < counter) {
+			maxC = counter;
+			maxN = number;
+			
+		}
+	
+	}
+	document.write(maxN," - ",maxC," times");
+</script>
+</head>
+<body>
+
+</body>
+</html>
