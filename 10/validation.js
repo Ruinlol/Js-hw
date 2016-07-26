@@ -9,12 +9,15 @@ function otherOption(){
 		I1.id = "extrainput";
 		I1.required = true;
 		document.querySelector('#countryDiv').appendChild(I1);
+
 		
 	}
 	else if (document.querySelector('#extralabel') !== null && document.querySelector('#extrainput') !== null){
 		document.querySelector('#countryDiv').removeChild(document.querySelector('#extralabel'));
 		document.querySelector('#countryDiv').removeChild(document.querySelector('#extrainput'));
 	}
+	
+
 	
 }
 function isValidName(x) {
@@ -100,7 +103,7 @@ function writeError(isValid, divName) {
 
 	} else if (isValid && document.querySelector(divName).lastChild.className == "error") {
 		document.querySelector(divName).lastChild.remove();
-		document.querySelector(divName).querySelector('.error').className = 'input';
+		document.querySelector(divName).querySelector('.error').className = 'input'; 
 	}
 }
 
